@@ -1,0 +1,21 @@
+.search-field {
+  width: 350px;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  color: #000;
+  border-bottom: 2px solid #e5e4e5;
+  padding-bottom: 5px;
+  font-size: 20px;
+  margin-bottom: 20px;
+
+  &:focus {
+    border-color: #6a91c2;
+  }
+
+  &::placeholder {
+    color: #b3b3b3;
+  }
+}

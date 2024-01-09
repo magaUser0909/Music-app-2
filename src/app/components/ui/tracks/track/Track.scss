@@ -1,0 +1,63 @@
+.track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &.active {
+    .controls {
+      .btn-play {
+        color: #7c35d1;
+      }
+
+      .credits {
+        color: #7c35d1;
+      }
+    }
+    .duration {
+      color: #7c35d1;
+    }
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+
+    .btn-play {
+      background-color: transparent;
+      border: none;
+      border-radius: 50%;
+      outline: none;
+      margin-right: 30px;
+      color: #727172;
+      font-size: 15px;
+      transition: 0.3s;
+      padding: 15px 15px 10px 15px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(114, 113, 114, 0.1);
+      }
+    }
+
+    .preview {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+
+    .credits {
+      display: flex;
+      flex-direction: column;
+      font-size: 17px;
+      row-gap: 3px;
+      transition: 0.3s;
+    }
+  }
+
+  .duration {
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.3s;
+  }
+}
